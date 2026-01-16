@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit Studio - Photography & Printing Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="LOGO" alt="Smit Studio Logo" class="logo-img">
+                <span class="logo-text">Smit Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#booking" class="nav-link">Booking</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Capture Your Precious Moments</h1>
+            <p class="hero-subtitle">Professional Photography & Printing Services for Your Special Days</p>
+            <a href="#booking" class="cta-button">Book Your Shoot Now</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Premium photography and printing solutions for your memories</p>
+            
+            <div class="services-grid">
+                <!-- Wedding Photography -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>Professional pre-wedding and wedding shoot packages with creative storytelling and beautiful compositions.</p>
+                </div>
+
+                <!-- Cup Printing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h3>Cup Printing</h3>
+                    <p>Personalized photo printing on premium quality cups. Perfect gifts for your loved ones.</p>
+                </div>
+
+                <!-- T-Shirt Printing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shirt"></i>
+                    </div>
+                    <h3>T-Shirt Printing</h3>
+                    <p>Custom photo t-shirt printing with vibrant, long-lasting prints. Express yourself uniquely.</p>
+                </div>
+
+                <!-- Stone Printing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Stone Printing</h3>
+                    <p>Beautiful stone tile printing perfect for home décor. Your memories in elegant style.</p>
+                </div>
+
+                <!-- Magic Mirrors -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mirror"></i>
+                    </div>
+                    <h3>Magic Mirrors</h3>
+                    <p>Interactive LED photo mirrors that bring memories to life. Perfect for weddings and events.</p>
+                </div>
+
+                <!-- Wedding Albums -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Wedding Albums</h3>
+                    <p>Premium quality photo albums with premium covers and papers. Cherish your memories forever.</p>
+                </div>
+
+                <!-- Photo Restoration -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Old to New Photo</h3>
+                    <p>Professional restoration of old photographs. Bring back the beauty of your vintage memories.</p>
+                </div>
+
+                <!-- Event Photography -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Event Coverage</h3>
+                    <p>Complete event photography coverage with professional editing and digital delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Shoot</h2>
+            <p class="section-subtitle">Fill out the form below and we'll confirm your booking</p>
+            
+            <div class="booking-container">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Contact Number *</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="wedding-photography">Wedding Photography</option>
+                            <option value="pre-wedding">Pre-Wedding Shoot</option>
+                            <option value="event-coverage">Event Coverage</option>
+                            <option value="photo-printing">Photo Printing Services</option>
+                            <option value="photo-restoration">Photo Restoration</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location/Venue *</label>
+                            <input type="text" id="location" name="location" placeholder="e.g., Your venue or location" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Booking Request</button>
+                </form>
+
+                <div class="booking-info">
+                    <h3>Booking Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>smeetstudio288@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Contact Number</h4>
+                            <p>+91 9428042199</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Within 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Smit Studio, Rokadiya Circle</p>
+                    <p>OPP. Rokadiya Hanuman Mandir</p>
+                    <p>Nr. Dhrangadhra Bus Stand</p>
+                    <p>Dhrangadhra, 363310, Gujarat</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 9428042199</p>
+                    <p>Call us anytime</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>smeetstudio288@gmail.com</p>
+                    <p>We reply within 24 hours</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/17kdLvJo2v/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/np_wedding_film?igsh=MWZ2ZzllNTNtOWY0Mw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/919428042199" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://youtube.com/@npweddingfilm?si=_Z-V5TaiV28iLLdG" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Smit Studio. All rights reserved.</p>
+            <p>Professional Photography & Printing Services</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
