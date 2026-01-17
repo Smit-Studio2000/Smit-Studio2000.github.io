@@ -1131,6 +1131,56 @@ body {
     background: var(--light-bg);
 }
 
+.restoration-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 3rem;
+}
+
+.restoration-gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    aspect-ratio: 1;
+}
+
+.restoration-gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.restoration-gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.restoration-gallery .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(212, 31, 51, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.restoration-gallery .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.restoration-gallery .gallery-overlay i {
+    font-size: 3rem;
+    color: white;
+}
+
+/* Old slider styles - keep for backward compatibility */
 .before-after-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
